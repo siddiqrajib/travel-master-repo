@@ -10,10 +10,8 @@ header{
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 135px;
 }
-main{
-    max-width: 1440px;
-    margin: 70px auto;
-}
+
+
 .popular-tour{
     margin: 100px 135px ;
 }
@@ -177,10 +175,8 @@ img{
     gap: 5px;
     margin-bottom: 5px;
 }
-.image-col{
-    margin-right: 650px;
-}
-.row{
+
+.row>div{
     flex:1;
 }
 
@@ -239,25 +235,37 @@ font-weight: 400;
 
 @media screen and (min-width:576px;) and (max-width:992px){
 .icon-foot{
-padding-right: 300px;
+padding-right: 30px;
 }
 
 
 /*media*/
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
+    nav,
+    .popular-tour,
+    .image-col,
+    .place-content{
+        flex-direction: column;
+    }  
     header{
         padding:20px;
     }
-    nav{
+    .place-content{
+        padding-left: 0;
         flex-direction: column;
-    }   
+    }  
+    .place-other{
+        margin-left: 0;
+    }
     }
 
-@media screen and (min-width:576px) and (max-width:992px) {
+@media screen and (min-width:600px) and (max-width:992px) {
     header{
         padding:50px;
     }
-    nav{
+    nav,
+    .popular-tour{
         flex-direction: column;
+        height: auto; 
     }  
 }
