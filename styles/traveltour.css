@@ -87,6 +87,18 @@ padding-right: 200px;
     font-size: 40px;
     font-weight: 800;
 }
+.badge{
+    border-radius: 8px;
+    background: #FF5400;   
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 12px 2px;
+    cursor: pointer;
+    border: 0;
+    width: 174px;
+    height: 52px;
+}
 .btn-primary{
     border-radius: 8px;
     background: #FF5400;   
@@ -184,6 +196,52 @@ img{
 font-weight: 800;
 
 }
+
+.icon-foot{
+display: flex;
+justify-content: center;
+gap: 25px;
+}
+.footer-des{
+justify-content: center;
+text-align: center;
+color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+}
+.place{
+    display: block;
+    border: 0;
+    border-radius: 1px;
+    background: rgba(251, 181, 99, 0.05);
+
+}
+.place-content{
+    display: flex;
+    gap: 200px;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.place-other{
+    display: block;
+    border: 0;
+    border-radius: 1px;
+    background: rgba(251, 181, 99, 0.05);
+    margin-left: 435px;
+    margin-right: 435px;
+    margin-top: 30px;
+
+}
+.last,.footer{
+    margin-top: 100px;
+}
+
+
+@media screen and (min-width:576px;) and (max-width:992px){
+.icon-foot{
+padding-right: 300px;
+}
+
 
 /*media*/
 @media screen and (max-width:576px) {
